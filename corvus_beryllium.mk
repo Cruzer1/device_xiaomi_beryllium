@@ -6,14 +6,14 @@
 
 $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
-# Inherit some common Stag os stuff.
-$(call inherit-product, vendor/stag/main.mk)
-BUILD_TYPE := OFFICIAL
-TARGET_MINIFIED_GAPPS := false
-TARGET_FACE_UNLOCK_SUPPORTED := true
+# Inherit some common CorvusOS stuff.
+$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
+RAVEN_LAIR := Official
+CORVUS_MAINTAINER := Cruzer
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := stag_beryllium
+PRODUCT_NAME := corvus_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := POCO F1
