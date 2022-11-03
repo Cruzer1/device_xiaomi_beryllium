@@ -9,7 +9,6 @@ $(call inherit-product, device/xiaomi/beryllium/device.mk)
 # Inherit some common Stag os stuff.
 $(call inherit-product, vendor/stag/main.mk)
 BUILD_TYPE := OFFICIAL
-TARGET_MINIFIED_GAPPS := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifier. This must come after all inclusions.
